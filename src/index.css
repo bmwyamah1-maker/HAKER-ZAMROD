@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans Arabic", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-red-500;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.prose-red {
+  --tw-prose-body: #ffffff;
+  --tw-prose-headings: #ef4444;
+  --tw-prose-links: #f87171;
+  --tw-prose-bold: #ffffff;
+  --tw-prose-counters: #ef4444;
+  --tw-prose-bullets: #ef4444;
+  --tw-prose-hr: #7f1d1d;
+  --tw-prose-quotes: #fca5a5;
+  --tw-prose-quote-borders: #ef4444;
+  --tw-prose-captions: #991b1b;
+  --tw-prose-code: #34d399;
+  --tw-prose-pre-code: #34d399;
+  --tw-prose-pre-bg: #000000;
+  --tw-prose-th-borders: #7f1d1d;
+  --tw-prose-td-borders: #450a0a;
+}
